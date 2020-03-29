@@ -1,9 +1,13 @@
-import { ADD_TODO, TOGGLE_TODO, SET_FILTER } from "./actionTypes";
+export const actions = {
+    ADD_TODO : "ADD_TODO",
+    TOGGLE_TODO : "TOGGLE_TODO",
+    SET_FILTER : "SET_FILTER"
+};
 
 let nextTodoId = 0;
 
 export const addTodo = content => ({
-    type: ADD_TODO,
+    type: actions.ADD_TODO,
     payload: {
         id: ++nextTodoId,
         content
@@ -11,8 +15,11 @@ export const addTodo = content => ({
 });
 
 export const toggleTodo = id => ({
-    type: TOGGLE_TODO,
+    type: actions.TOGGLE_TODO,
     payload: { id }
 });
 
-export const setFilter = filter => ({ type: SET_FILTER, payload: { filter } });
+export const setFilter = filter => ({
+    type: actions.SET_FILTER,
+    payload: { filter }
+});
