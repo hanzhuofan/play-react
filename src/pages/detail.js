@@ -9,7 +9,7 @@ export default class Detail extends React.Component {
             <div>
                 <a href='#/'>回到home</a>
                 <Provider store={store}>
-                    <TodoApp />
+                    <TodoApp clasname = "container"/>
                 </Provider>
             </div>
         )
