@@ -1,5 +1,5 @@
 import { actions } from "../actions";
-import { VISIBILITY_FILTERS } from "../../components/constants";
+import { VISIBILITY_FILTERS } from "../../components/redux/constants";
 
 const initialState = VISIBILITY_FILTERS.ALL;
 

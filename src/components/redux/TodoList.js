@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import Todo from "./Todo";
 // import { getTodos } from "../redux/selectors";
-import { getTodosByVisibilityFilter } from "../store/selectors";
+import { getTodosByVisibilityFilter } from "../../store/selectors";
 // import { VISIBILITY_FILTERS } from "./constants";
 
 const TodoList = ({ todos }) => (

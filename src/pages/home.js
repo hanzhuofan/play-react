@@ -1,6 +1,7 @@
 import React from 'react';
-import Table from "./Table";
-import Form from "./Form";
+import Table from "../components/parent/Table";
+import Form from "../components/parent/Form";
+import Testplay from "../components/Testplay"
 
 
 export default class Home extends React.Component {
@@ -32,9 +33,9 @@ export default class Home extends React.Component {
                     <Table characterData={characters} removeCharacter={this.removeCharacter} />
                     <h3>Add New</h3>
                     <Form handleSubmit={this.handleSubmit} />
+                    <Testplay/>
                 </div>
             </div>
-
         )
     }
 }

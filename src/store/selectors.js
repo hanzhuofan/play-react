@@ -1,4 +1,4 @@
-import { VISIBILITY_FILTERS } from "../components/constants";
+import { VISIBILITY_FILTERS } from "../components/redux/constants";
 
 export const getTodosState = store => store.todos;
 
